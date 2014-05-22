@@ -1,0 +1,48 @@
+body {
+    padding: 40px;
+    font-size: 10px;
+    line-height: 10px;
+}
+img {
+    display: block;
+    height: 100px;
+    width: 100px;
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    border-radius: 0px;
+    background: #FFFFFF;
+}
+h1 {
+    margin: 55px 0px 10px 0px;
+    padding: 0px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+}
+h2 {
+    margin: 60px 0px 10px 0px;
+    padding: 0px;
+    font-size: 15px;
+    line-height: 15px;
+    text-align: left;
+    border-bottom: solid 1px #D1D1D1;
+}
+h2 span {
+    display: none;
+}
+p {
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+}
+pre {
+    display: none;
+}
+dl {
+    display: block;
+}
+footer {
+    display: none;
+}

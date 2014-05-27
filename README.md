@@ -1,1 +1,1 @@
-It's just a CV
+It's just my CV

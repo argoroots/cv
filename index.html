@@ -35,7 +35,7 @@
         <dl>
             <dt>Entu</dt>
             <dd>Futuristic data management system - all your business data in one place without sync nor development.</dd>
-            <dd>skills: <span>Python, HTML5, jQuery, AngularJS, RESTfull, OAuth2</span></dd>
+            <dd>skills: <span>Python, Node.js, MySQL, HTML5, jQuery, AngularJS, RESTfull, OAuth2</span></dd>
 
             <dt>Ööülikool</dt>
             <dd>New site for Ööülikool. Currently under fast development. Backend is Entu of course.</dd>
@@ -47,15 +47,15 @@
 
             <dt>SurfData</dt>
             <dd>Online store and orders management. Stock info is automatically importer from dozens of vendors.</dd>
-            <dd>skills: <span>Python, PHP, HTML, jQuery, OpenID</span></dd>
+            <dd>skills: <span>Python, PHP, MySQL, HTML, jQuery, OpenID</span></dd>
 
             <dt>ScreenWerk</dt>
             <dd>Digital signage for Piletilevi AS. Now ported to Entu + HTML5.</dd>
-            <dd>skills: <span>Python, PHP, HTML5</span></dd>
+            <dd>skills: <span>Python, PHP, MySQL, HTML5</span></dd>
 
             <dt>eMug - Estonian Macintosh User Group</dt>
             <dd>Group work administration. News page and forum development.</dd>
-            <dd>skills: <span>WordPress, PHP</span></dd>
+            <dd>skills: <span>WordPress, PHP, MySQL</span></dd>
 
             <dt>ARX-Raamat</dt>
             <dd>Library management system. Used in more than 100 libraries around Estonia.</dd>
@@ -67,7 +67,7 @@ var projects = [
         title:   "Entu",
         url:     "https://www.entu.ee",
         info:    "Futuristic data management system - all your business data in one place without sync nor development.",
-        skills:  ['Python', 'HTML5', 'jQuery', 'AngularJS', 'RESTfull', 'OAuth2', 'UX/UI design'],
+        skills:  ['Python', 'Node.js', 'HTML5', 'MySQL', 'MongoDB', 'AngularJS', 'RESTfull', 'OAuth2', 'UX/UI design'],
         current: true
     },
     {
@@ -88,21 +88,21 @@ var projects = [
         title:   "SurfData",
         url:     "https://surfdata.ee",
         info:    "Online store and orders management. Stock info is automatically importer from dozens of vendors.",
-        skills:  ['Python', 'PHP', 'HTML', 'jQuery', 'OpenID', 'UX/UI design'],
+        skills:  ['Python', 'PHP', 'MySQL', 'HTML', 'jQuery', 'OpenID', 'UX/UI design'],
         current: false
     },
     {
         title:   "ScreenWerk",
         url:     "http://screenwerk.eu",
         info:    "Digital signage for Piletilevi AS. Now ported to Entu + HTML5.",
-        skills:  ['Python', 'PHP', 'HTML5', 'UX/UI design'],
+        skills:  ['Python', 'PHP', 'HTML5', 'MySQL', 'UX/UI design'],
         current: false
     },
     {
         title:   "eMug - Estonian Macintosh User Group",
         url:     "http://www.emug.ee",
         info:    "Group work administration. News page and forum development.",
-        skills:  ['WordPress', 'PHP'],
+        skills:  ['WordPress', 'PHP', 'MySQL'],
         current: false
     },
     {
@@ -114,15 +114,9 @@ var projects = [
     },
 ];
 
-function getCurrentProjects() {
-    var current = [];
-    for(i in projects) {
-        if(projects[i].current === true) current.push(projects[i]);
-    }
-    return current;
-}
+var current_projects = projects.filter(function(x) { return x.current; })
 
-console.log(getCurrentProjects());
+console.log(current_projects);
         </code></pre>
 
 

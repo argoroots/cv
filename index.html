@@ -35,6 +35,10 @@
             <dd>Futuristic data management system - all your business data in one place without sync nor development.</dd>
             <dd>skills: <span>Python, Node.js, MySQL, MongoDB, AngularJS, AWS, RESTfull, UX/UI design</span></dd>
 
+            <dt>Memoriaal</dt>
+            <dd>Memorial to victims of communism 1940–1991</dd>
+            <dd>skills: <span>HTML, jQuery, UX design</span></dd>
+
             <dt>Helpific</dt>
             <dd>Helpific connects volunteers to those who need help with everyday activities. Backend is Entu.</dd>
             <dd>skills: <span>Node.js, AngularJS, RESTfull</span></dd>
@@ -70,6 +74,13 @@ let projects = [
         url:     'http://www.entu.ee',
         info:    'Futuristic data management system - all your business data in one place without sync nor development.',
         skills:  ['Python', 'Node.js', 'MySQL', 'MongoDB', 'AngularJS', 'AWS', 'RESTfull', 'UX/UI design'],
+        current: true
+    },
+    {
+        title:   'Memoriaal',
+        url:     'https://www.memoriaal.ee',
+        info:    'Memorial to victims of communism 1940–1991',
+        skills:  ['HTML', 'jQuery', 'UX design'],
         current: true
     },
     {
@@ -128,11 +139,15 @@ console.log(current_projects)
 
         <h2>employment<span>.py</span></h2>
         <dl>
+            <dt>2018 - </dt>
+            <dd>Software Engineer at High Mobility</dd>
+            <dd><span></span></dd>
+
             <dt>2016 - </dt>
             <dd>Robotics trainer at HITSA</dd>
             <dd><span>Introducing and teaching robotics to Estonian school and kindergarten teachers</span></dd>
 
-            <dt>2016 - </dt>
+            <dt>2016 - 2018</dt>
             <dd>Front-end developer at LHV Bank</dd>
             <dd><span>LHV Bank homepage complete rewrite. From back to front.</span></dd>
 
@@ -140,7 +155,7 @@ console.log(current_projects)
             <dd>Chairman of the board at Kunda Hariduse Toetusselts</dd>
             <dd><span>Chairman of the board.</span></dd>
 
-            <dt>2014 - </dt>
+            <dt>2014 - 2018</dt>
             <dd>Teacher at Tabasalu Ühisgümnaasium</dd>
             <dd><span>Robotics and programming teacher.</span></dd>
 
@@ -183,6 +198,7 @@ console.log(current_projects)
         </dl>
         <pre><code class="language-python">
 started_at = [
+    2018,
     2016,
     2016,
     2015,
@@ -201,8 +217,9 @@ started_at = [
 ended_at = [
     None,
     None,
+    2018,
     None,
-    None,
+    2018,
     2015,
     None,
     2012,
@@ -215,6 +232,7 @@ ended_at = [
 ]
 
 positions = [
+    'Software Engineer at High Mobility',
     'Robotics trainer at HITSA',
     'Front-end developer at LHV Bank',
     'Chairman of the board at Kunda Hariduse Toetusselts',
@@ -231,6 +249,7 @@ positions = [
 ]
 
 duty = [
+    '',
     'Introducing and teaching robotics to Estonian school and kindergarten teachers',
     'LHV Bank homepage complete rewrite. From back to front.',
     'Chairman of the board.',

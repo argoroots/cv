@@ -37,11 +37,15 @@
 
             <dt>Memoriaal</dt>
             <dd>Memorial to victims of communism 1940–1991</dd>
-            <dd>skills: <span>HTML, jQuery, UX design</span></dd>
+            <dd>skills: <span>HTML, jQuery, UX design, SSG</span></dd>
+
+            <dt>Citizen OS</dt>
+            <dd>Not-for-profit organisation providing a free decision- making civic tech platform.</dd>
+            <dd>skills: <span>HTML, jQuery, SSG</span></dd>
 
             <dt>Kogu Me Lugu</dt>
             <dd>Kogu Me Lugu is an online oral history portal. We collect, preserve and share the family stories of Estonians from around the world in video format.</dd>
-            <dd>skills: <span>HTML, jQuery, UX design</span></dd>
+            <dd>skills: <span>HTML, jQuery, UX design, SSG</span></dd>
 
             <dt>Helpific</dt>
             <dd>Helpific connects volunteers to those who need help with everyday activities. Backend is Entu.</dd>
@@ -57,7 +61,7 @@
 
             <dt>SurfData</dt>
             <dd>Online store and orders management. Stock info is automatically importer from dozens of vendors.</dd>
-            <dd>skills: <span>Python, PHP, MySQL, HTML, jQuery, OpenID, UX/UI design, SOAP</span></dd>
+            <dd>skills: <span>Python, PHP, MySQL, HTML, AngularJS, jQuery, OpenID, UX/UI design, SOAP</span></dd>
 
             <dt>ScreenWerk</dt>
             <dd>Digital signage for Piletilevi AS. Now ported to Entu + Node.js.</dd>
@@ -81,17 +85,24 @@ let projects = [
         current: true
     },
     {
+        title:   'Citizen OS',
+        url:     'https://www.citizenos.com',
+        info:    'Not-for-profit organisation providing a free decision- making civic tech platform',
+        skills:  ['HTML', 'jQuery', 'SSG'],
+        current: false
+    },
+    {
         title:   'Memoriaal',
         url:     'https://www.memoriaal.ee',
         info:    'Memorial to victims of communism 1940–1991',
-        skills:  ['HTML', 'jQuery', 'UX design'],
+        skills:  ['HTML', 'jQuery', 'UX design', 'SSG'],
         current: false
     },
     {
         title:   'Kogu Me Lugu',
         url:     'https://www.kogumelugu.ee',
         info:    'Kogu Me Lugu is an online oral history portal. We collect, preserve and share the family stories of Estonians from around the world in video format.',
-        skills:  ['HTML', 'jQuery', 'UX design'],
+        skills:  ['HTML', 'jQuery', 'UX design', 'SSG'],
         current: false
     },
     {
@@ -118,7 +129,7 @@ let projects = [
     {
         title:   'SurfData',
         info:    'Online store and orders management. Stock info is automatically importer from dozens of vendors.',
-        skills:  ['Python', 'PHP', 'MySQL', 'HTML', 'jQuery', 'OpenID', 'UX/UI design', 'SOAP'],
+        skills:  ['Python', 'PHP', 'MySQL', 'HTML', 'AngularJS', 'jQuery', 'OpenID', 'UX/UI design', 'SOAP'],
         current: false
     },
     {
@@ -150,6 +161,10 @@ console.log(current_projects)
 
         <h2>employment<span>.py</span></h2>
         <dl>
+            <dt>2020 - </dt>
+            <dd>Senior Front-End Lead at ADM Interactive</dd>
+            <dd><span></span></dd>
+
             <dt>2018 - 2020</dt>
             <dd>Software Engineer at High Mobility</dd>
             <dd><span>Rewrite and move homepage to static site on AWS; Move to (and manage) Rest API on AWS.</span></dd>
@@ -209,6 +224,7 @@ console.log(current_projects)
         </dl>
         <pre><code class="language-python">
 started_at = [
+    2020,
     2018,
     2016,
     2016,
@@ -226,6 +242,7 @@ started_at = [
 ]
 
 ended_at = [
+    None,
     2020,
     None,
     2018,
@@ -243,6 +260,7 @@ ended_at = [
 ]
 
 positions = [
+    'Senior Front-End Lead at ADM Interactive',
     'Software Engineer at High Mobility',
     'Robotics trainer at HITSA',
     'Front-end developer at LHV Bank',

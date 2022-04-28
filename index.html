@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <meta name="google-site-verification" content="vEjo5ozXwuOzlVqS1IlQbuhhI1CVADio1voaOmND4Qs" />
 
-        <title>Argo Roots : CV</title>
+        <title>Argo Roots · CV</title>
 
         <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:300,700|Source+Code+Pro:400,700' rel='stylesheet' />
         <script>
@@ -29,13 +29,21 @@
         </p>
         <h2>projects<span>.js</span></h2>
         <dl>
+            <dt>OAuth.ee</dt>
+            <dd>Use Estonian ID-card, Mobile-ID, Smart-ID or E-mail as OAuth authentication provider.</dd>
+            <dd>skills: <span>Node.js, Docker, Vue.js, Redis, Oauth</span></dd>
+
+            <dt>Entu SSG</dt>
+            <dd>Simple Pug (former Jade), Markdown, Yaml static site generator.</dd>
+            <dd>skills: <span>Node.js, Pug, Markdown</span></dd>
+
             <dt>Entu</dt>
             <dd>Futuristic data management system - all your business data in one place without sync nor development.</dd>
-            <dd>skills: <span>Python, Node.js, MySQL, MongoDB, AngularJS, AWS, RESTfull, UX/UI design</span></dd>
+            <dd>skills: <span>Python, Node.js, MySQL, MongoDB, Docker, AWS, RESTfull, UX/UI design</span></dd>
 
             <dt>Memoriaal</dt>
-            <dd>Memorial to victims of communism 1940–1991</dd>
-            <dd>skills: <span>HTML, jQuery, UX design, SSG</span></dd>
+            <dd>Memorial to victims of communism 1940–1991.</dd>
+            <dd>skills: <span>HTML, jQuery, UX design, SSG, Elasticsearch</span></dd>
 
             <dt>Citizen OS</dt>
             <dd>Not-for-profit organisation providing a free decision- making civic tech platform.</dd>
@@ -48,10 +56,6 @@
             <dt>Helpific</dt>
             <dd>Helpific connects volunteers to those who need help with everyday activities. Backend is Entu.</dd>
             <dd>skills: <span>Node.js, AngularJS, RESTfull</span></dd>
-
-            <dt>Ööülikool</dt>
-            <dd>New site for Ööülikool. Currently under fast development. Backend is Entu.</dd>
-            <dd>skills: <span>HTML5, AngularJS, RESTfull</span></dd>
 
             <dt>Spacerabbit</dt>
             <dd>Very simple online store. Backend is Entu.</dd>
@@ -74,92 +78,99 @@
             <dd>skills: <span>VisualBasic, Access, Windows</span></dd>
         </dl>
         <pre><code class="language-javascript">
-let projects = [
+const projects = [
     {
-        title:   'Entu',
-        url:     'https://entu.app',
-        info:    'Futuristic data management system - all your business data in one place without sync nor development.',
-        skills:  ['Python', 'Node.js', 'MySQL', 'MongoDB', 'AngularJS', 'AWS', 'RESTfull', 'UX/UI design'],
-        current: true
+        title: 'OAuth.ee',
+        url: 'https://docs.oauth.ee',
+        info: 'Use Estonian ID-card, Mobile-ID, Smart-ID or E-mail as OAuth authentication provider.',
+        skills: ['Node.js', 'Docker', 'Vue.js', 'Redis', 'Oauth'],
+        isCurrent: true
     },
     {
-        title:   'Citizen OS',
-        url:     'https://www.citizenos.com',
-        info:    'Not-for-profit organisation providing a free decision- making civic tech platform',
-        skills:  ['HTML', 'jQuery', 'SSG'],
-        current: false
+        title: 'Entu SSG',
+        url: 'https://entu.site',
+        info: 'Simple Pug (former Jade), Markdown, Yaml static site generator.',
+        skills: ['Node.js', 'Pug', 'Markdown'],
+        isCurrent: true
     },
     {
-        title:   'Memoriaal',
-        url:     'https://www.memoriaal.ee',
-        info:    'Memorial to victims of communism 1940–1991',
-        skills:  ['HTML', 'jQuery', 'UX design', 'SSG'],
-        current: false
+        title: 'Entu',
+        url: 'https://entu.app',
+        info: 'Futuristic data management system - all your business data in one place without sync nor development.',
+        skills: ['Python', 'Node.js', 'MySQL', 'MongoDB', 'Docker', 'AWS', 'RESTfull', 'UX/UI design'],
+        isCurrent: true
     },
     {
-        title:   'Kogu Me Lugu',
-        url:     'https://www.kogumelugu.ee',
-        info:    'Kogu Me Lugu is an online oral history portal. We collect, preserve and share the family stories of Estonians from around the world in video format.',
-        skills:  ['HTML', 'jQuery', 'UX design', 'SSG'],
-        current: false
+        title: 'Citizen OS',
+        url: 'https://www.citizenos.com',
+        info: 'Not-for-profit organisation providing a free decision- making civic tech platform.',
+        skills: ['HTML', 'jQuery', 'SSG'],
+        isCurrent: false
     },
     {
-        title:   'Helpific',
-        url:     'https://helpific.com',
-        info:    'Helpific connects volunteers to those who need help with everyday activities. Backend is Entu.',
-        skills:  ['Node.js', 'AngularJS', 'RESTfull'],
-        current: false
+        title: 'Memoriaal',
+        url: 'https://www.memoriaal.ee',
+        info: 'Memorial to victims of communism 1940–1991.',
+        skills: ['HTML', 'jQuery', 'UX design', 'SSG', 'Elasticsearch'],
+        isCurrent: false
     },
     {
-        title:   'Ööülikool',
-        url:     'http://argo.roots.ee/ylikool',
-        info:    'New site for Ööülikool. Currently under fast development. Backend is Entu.',
-        skills:  ['HTML5', 'AngularJS', 'RESTfull'],
-        current: false
+        title: 'Kogu Me Lugu',
+        url: 'https://www.kogumelugu.ee',
+        info: 'Kogu Me Lugu is an online oral history portal. We collect, preserve and share the family stories of Estonians from around the world in video format.',
+        skills: ['HTML', 'jQuery', 'UX design', 'SSG'],
+        isCurrent: false
     },
     {
-        title:   'Spacerabbit',
-        url:     'http://spacerabbit.eu',
-        info:    'Very simple online store. Backend is Entu.',
-        skills:  ['PHP', 'HTML', 'jQuery', 'UX/UI design'],
-        current: false
+        title: 'Helpific',
+        url: 'https://helpific.com',
+        info: 'Helpific connects volunteers to those who need help with everyday activities. Backend is Entu.',
+        skills: ['Node.js', 'AngularJS', 'RESTfull'],
+        isCurrent: false
     },
     {
-        title:   'SurfData',
-        info:    'Online store and orders management. Stock info is automatically importer from dozens of vendors.',
-        skills:  ['Python', 'PHP', 'MySQL', 'HTML', 'AngularJS', 'jQuery', 'OpenID', 'UX/UI design', 'SOAP'],
-        current: false
+        title: 'Spacerabbit',
+        url: 'http://spacerabbit.eu',
+        info: 'Very simple online store. Backend is Entu.',
+        skills: ['PHP', 'HTML', 'jQuery', 'UX/UI design'],
+        isCurrent: false
     },
     {
-        title:   'ScreenWerk',
-        info:    'Digital signage for Piletilevi AS. Now ported to Entu + Node.js.',
-        skills:  ['Python', 'PHP', 'HTML5', 'MySQL', 'UX/UI design'],
-        current: false
+        title: 'SurfData',
+        info: 'Online store and orders management. Stock info is automatically importer from dozens of vendors.',
+        skills: ['Python', 'PHP', 'MySQL', 'HTML', 'AngularJS', 'jQuery', 'OpenID', 'UX/UI design', 'SOAP'],
+        isCurrent: false
     },
     {
-        title:   'eMug - Estonian Macintosh User Group',
-        info:    'Group work administration. News page and forum development.',
-        skills:  ['WordPress', 'PHP', 'MySQL'],
-        current: false
+        title: 'ScreenWerk',
+        info: 'Digital signage for Piletilevi AS. Now ported to Entu + Node.js.',
+        skills: ['Python', 'PHP', 'HTML5', 'MySQL', 'UX/UI design'],
+        isCurrent: false
     },
     {
-        title:   'ARX-Raamat',
-        info:    'Library management system. Used in more than 100 libraries around Estonia.',
-        skills:  ['VisualBasic', 'Access', 'Windows', 'UX/UI design'],
-        current: false
+        title: 'eMug - Estonian Macintosh User Group',
+        info: 'Group work administration. News page and forum development.',
+        skills: ['WordPress', 'PHP', 'MySQL'],
+        isCurrent: false
+    },
+    {
+        title: 'ARX-Raamat',
+        info: 'Library management system. Used in more than 100 libraries around Estonia.',
+        skills: ['VisualBasic', 'Access', 'Windows', 'UX/UI design'],
+        isCurrent: false
     },
 ]
 
-let current_projects = projects.filter(x => x.current)
+const currentProjects = projects.filter(x => x.isCurrent)
 
-console.log(current_projects)
+console.log(currentProjects)
         </code></pre>
 
 
 
         <h2>employment<span>.py</span></h2>
         <dl>
-            <dt>2021 – </dt>
+            <dt>2021 – 2022</dt>
             <dd>Lecturer at Estonian Entrepreneurship University of Applied Sciences</dd>
             <dd><span>Give lectures of web applications</span></dd>
 
@@ -250,7 +261,7 @@ started_at = [
 ]
 
 ended_at = [
-    None,
+    2022,
     None,
     2020,
     2020,
@@ -371,9 +382,9 @@ zip(started_at, ended_at, positions, duty)
 
             <dt>social</dt>
             <dd>
-                <a href="https://github.com/argoroots">github.com/argoroots</a><br>
-                <a href="https://twitter.com/argoroots">twitter.com/argoroots</a><br>
-                <a href="https://facebook.com/argoroots">facebook.com/argoroots</a>
+                <a href="https://github.com/argoroots">github.com</a><br>
+                <a href="https://twitter.com/argoroots">twitter.com</a><br>
+                <a href="https://www.printables.com/social/42675-argoroots/about">printables.com</a>
             </dd>
         </dl>
         <pre><code class="language-php">
@@ -390,7 +401,7 @@ class Contact {
     public $links = array(
         'https://github.com/argoroots',
         'https://twitter.com/argoroots',
-        'https://facebook.com/argoroots'
+        'https://www.printables.com/social/42675-argoroots/about'
     );
 
     public function send_message($subject, $message) {
